@@ -2,11 +2,11 @@ def x = 10
 println "x: " + x.class // java.lang.Integer
 x = 2.5.toInteger() // Conversión a java.lang.Integer y, por lo tanto, truncado de la parte decimal.
 println "x: $x " + x.class
-x = (float) 10 // Casting (explicit)
+x = (float) 10 // Casting (explícito)
 println "x: " + x.class // java.lang.Float
-x = "10" // Coercion (implicit)
+x = "10" // Coercion (implícito)
 println "x: " + x.class // java.lang.String
-x = x as Double
+x = x as Double // Coercion (explícito)
 println "x: " + x.class // java.lang.Double
 
 def num1 = (Float) 10 // java.lang.Float
